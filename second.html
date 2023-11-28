@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  label textarea {
+    vertical-align: middle;
+  }
+
+  .button {
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+</style>
+</head>
+
+<body bgcolor="white">
+  <div class="container">
+    <h3>Registration Form</h3>
+    <form name="f">
+      <br>
+      <b>Name:</b>
+      <input type="text" name="name" placeholder="Enter your name here!" /><br><br>
+      <b>Password:</b>
+      <input type="password" name="pass" placeholder="Enter strong password" required /><br><br>
+      <b><label for="email">Email:</label></b>
+      <input type="email" id="email" name="email" placeholder="Enter your email-address" required/><br><br>
+      <br>
+      <b>Gender:</b>
+      <input type="radio" name="gender">Male</input>
+      <input type="radio" name="gender">Female</input>
+      <input type="radio" name="gender">Others</input><br><br>
+      <b>Languages known:</b>
+      <input type="checkbox" name="lang">Telugu</input>
+      <input type="checkbox" name="lang">English</input>
+      <input type="checkbox" name="lang">Hindi</input>
+      <input type="checkbox" name="lang">Tamil</input><br><br>
+      <label><b>Address:</b>
+      <textarea rows="5" cols="30"></textarea></label><br><br>
+      <button class="button" onclick="return validateForm()">Submit</button><br><br>
+    </form>
+  </div>
+</body>
+</html>
